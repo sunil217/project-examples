@@ -30,6 +30,21 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+    
+    <distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>localhost-releases</name>
+        <url>http://artifactory-us-01.twa.ateb.com:8081/artifactory/maven-demo-repo</url>
+    </repository>
+    <snapshotRepository>
+        <id>snapshots</id>
+        <name>localhost-snapshots</name>
+        <url>http://artifactory-us-01.twa.ateb.com:8081/artifactory/maven-demo-repo</url>
+    </snapshotRepository>
+</distributionManagement>
+    
+    
 
     <build>
         <pluginManagement>
