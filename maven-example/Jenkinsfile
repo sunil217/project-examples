@@ -25,8 +25,8 @@ pipeline {
                 def rtMaven = Artifactory.newMavenBuild()
                 def buildInfo
                 server.bypassProxy = true
-                rtMaven.tool = "maven3"
-                rtMaven.deployer releaseRepo:'maven-local', snapshotRepo:'maven-snapshot-local', server: artifactory-usa
+                rtMaven.tool = "maven3.5.4"
+                rtMaven.deployer releaseRepo:'maven-local', snapshotRepo:'maven-snapshot-local', server: server
                 
             def uploadSpec = """{
                "files": [
