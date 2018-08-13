@@ -7,13 +7,13 @@ pipeline {
     stages {
         stage('Maven Build') {
             steps { 
-                sh 'mvn clean install'
+                sh 'mvn -f maven/example clean install'
             }
         }
 
         stage('Maven Package') {
             steps {
-                sh 'mvn package'
+                sh 'mvn -f maven-example package'
             }
         }
       
