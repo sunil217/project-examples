@@ -21,12 +21,12 @@ pipeline {
         stage('Artifactory Deploy') {
            steps {
              script {
-                def server = Artifactory.server 'server'
+                def server = Artifactory.server 'artifactory-usa'
                 def rtMaven = Artifactory.newMavenBuild()
                 def buildInfo
                 server.bypassProxy = true
                 rtMaven.tool = "maven3"
-                rtMaven.deployer releaseRepo:'maven-local', snapshotRepo:'maven-snapshot-local', server: server
+                rtMaven.deployer releaseRepo:'maven-local', snapshotRepo:'maven-snapshot-local', server: artifactory-usa
                 
             def uploadSpec = """{
                "files": [
