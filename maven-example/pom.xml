@@ -40,7 +40,7 @@
     <snapshotRepository>
         <id>snapshots</id>
         <name>localhost-snapshots</name>
-        <url>https://artifactory-us-01.ateb.com:8081/artifactory/maven-local-snapshot</url>
+        <url>https://artifactory-us-01.ateb.com:8081/artifactory/maven-snapshot-local</url>
     </snapshotRepository>
 </distributionManagement>
     
