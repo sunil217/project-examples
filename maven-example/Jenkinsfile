@@ -7,13 +7,13 @@ pipeline {
     stages {
         stage('Maven Build') {
             steps { 
-                sh 'mvn -f maven-example clean install'
+                sh 'mvn -f maven-example/pom.xml clean install'
             }
         }
 
         stage('Maven Package') {
             steps {
-                sh 'mvn -f maven-example package'
+                sh 'mvn -f maven-example/pom.xml package'
             }
         }
       
