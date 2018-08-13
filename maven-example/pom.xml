@@ -29,8 +29,8 @@
             <version>3.8.1</version>
             <scope>test</scope>
         </dependency>
-    </dependencies>
-    
+    </dependencies
+    <!--   
     <distributionManagement>
     <repository>
         <id>central</id>
@@ -44,7 +44,7 @@
     </snapshotRepository>
 </distributionManagement>
     
-    
+    -->
 
     <build>
         <pluginManagement>
