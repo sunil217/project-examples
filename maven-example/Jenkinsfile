@@ -31,7 +31,9 @@ pipeline {
             def uploadSpec = """{
                "files": [
                   {
-                    "pattern": "maven-example/multi*/target/*.war",
+                    "pattern": "maven-example/multi1/target/*.war",
+                    "pattern": "maven-example/multi2/target/*.war",
+                    "pattern": "maven-example/multi3/target/*.war",
                     "target": "maven-snapshot-local/"
                    }
                   ]
