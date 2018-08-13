@@ -35,12 +35,12 @@
     <repository>
         <id>central</id>
         <name>localhost-releases</name>
-        <url>http://artifactory-us-01.twa.ateb.com:8081/artifactory/maven-demo-repo</url>
+        <url>https://artifactory-us-01.ateb.com:8081/artifactory/maven-local</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
         <name>localhost-snapshots</name>
-        <url>http://artifactory-us-01.twa.ateb.com:8081/artifactory/maven-demo-repo</url>
+        <url>https://artifactory-us-01.ateb.com:8081/artifactory/maven-local-snapshot</url>
     </snapshotRepository>
 </distributionManagement>
     
